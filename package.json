@@ -1,6 +1,9 @@
 {
   "name": "prerender-server",
   "version": "1.0.0",
+  "engines": {
+    "node": "^16"
+  },
   "description": "A basic prerender server",
   "main": "index.js",
   "type": "module",
