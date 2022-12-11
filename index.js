@@ -1,5 +1,8 @@
 import prerender from 'prerender'
 import memoryCache from 'prerender-memory-cache'
+import { exec } from 'child_process'
+
+exec('pwd')
 
 const server = prerender({
   chromeLocation: '/opt/render/project/.render/chrome/opt/google/chrome/',
