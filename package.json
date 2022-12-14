@@ -8,13 +8,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "postinstall": "cd ./node_modules/puppeteer && npm run postinstall",
     "start": "node index"
   },
   "author": "Almog Gabay",
   "license": "ISC",
   "dependencies": {
-    "chrome-aws-lambda": "^10.1.0",
     "prerender": "^5.20.1",
-    "prerender-memory-cache": "^1.0.2"
+    "prerender-memory-cache": "^1.0.2",
+    "puppeteer": "^19.4.0"
   }
 }
