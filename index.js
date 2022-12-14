@@ -1,8 +1,9 @@
+import Chromium from 'chrome-aws-lambda'
 import prerender from 'prerender'
 import memoryCache from 'prerender-memory-cache'
 
 const server = prerender({
-  chromeLocation: './chrome/opt/google/chrome/',
+  chromeLocation: await Chromium.executablePath,
   waitAfterLastRequest: 0.2 * 1000,
   pageDoneCheckInterval: 0.5 * 1000,
   pageLoadTimeout: 5 * 1000
